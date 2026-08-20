@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -148,6 +148,41 @@ footer a{margin-right:14px; display:inline-block}
   "author": { "@type": "Organization", "name": "0xelitesystem", "url": "https://elitesystem.ai" }
 }
 </script>
+<style>
+/* elitesystem brand tokens: chrome only, meaning preserved */
+:root, :root[data-theme="dark"] {
+  --accent: #d4ff3a;
+  --accent-fg: #0a0a0a;
+  --bad: #ff6450;
+  --bg: #0a0a0a;
+  --fg: #e8e8e3;
+  --info: #6fd3e0;
+  --line: #1f1f1d;
+  --line2: #2a2a27;
+  --muted: #6e6e68;
+  --ok: #7ddc7d;
+  --panel: #111110;
+  --panel2: #161614;
+  --warn: #ffb454;
+}
+:root[data-theme="light"] {
+  --accent: #2d6b00;
+  --accent-fg: #ffffff;
+  --bad: #b8341a;
+  --bg: #e8ebef;
+  --fg: #0a0a0a;
+  --info: #0f5c60;
+  --line: #c8cdd5;
+  --line2: #aab0ba;
+  --muted: #6e6e68;
+  --ok: #1a5c2e;
+  --panel: #dee2e8;
+  --panel2: #d3d7df;
+  --warn: #a05a00;
+}
+:root { color-scheme: dark; }
+:root[data-theme="light"] { color-scheme: light; }
+</style>
 </head>
 <body>
 <script>
