@@ -2,9 +2,18 @@
 
 Drop an HTML page or a .docx you are about to index and see every character a text extractor hands the model that a reader never sees: hidden runs, clipped text, off-canvas payloads.
 
-## Live demo
+**Live demo:** https://0xelitesystem.github.io/rag-ingest-injection-scanner/
 
-https://0xelitesystem.github.io/rag-ingest-injection-scanner/
+## Use
+
+1. Paste HTML into the input box, or pick an `.html`, `.htm`, `.xhtml`, `.docx`, `.txt` or `.md` file with the file picker.
+2. Choose an extractor profile: the default one or the raw one.
+3. Click "Analyze" and read the gap: the characters an extractor would hand the model that a reader never sees, broken down by rule.
+4. Use "Load sample HTML" or "Load sample DOCX" to see a worked example first.
+
+## Why this exists
+
+Documents headed into a RAG index can carry text a human reviewer never sees but a text extractor passes straight to the model. This is a single HTML file that shows that gap before you index anything, with no tracking, no upload and no dependencies. MIT licensed.
 
 ## Features
 
@@ -34,7 +43,20 @@ Library behaviour (which reader emits which channel) is kept in one dated block,
 
 ## Privacy
 
-Everything happens in your browser. Your document is never uploaded, there is no backend, no analytics, no API key and no external dependencies. The page makes zero network requests after it loads, and the frame it renders your document in is forbidden from making any at all.
+Everything happens in your browser. Your document is never uploaded, there is no backend, no analytics, no API key and no external dependencies. The page makes zero network requests after it loads, and the frame it renders your document in is forbidden from making any at all. The only thing stored is your light or dark theme choice, kept in localStorage under the key `ris-theme`.
+
+## Run locally
+
+```
+git clone https://github.com/0xelitesystem/rag-ingest-injection-scanner
+cd rag-ingest-injection-scanner
+```
+
+Open `index.html` in a browser, or serve the folder with `python -m http.server` and visit http://localhost:8000.
+
+## Build
+
+No build step. It is a single `index.html` file.
 
 ## License
 
