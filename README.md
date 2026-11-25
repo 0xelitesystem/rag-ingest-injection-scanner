@@ -65,7 +65,7 @@ MIT. See [LICENSE](LICENSE).
 ## More
 
 - Companion, the render side of the same problem: [llm-output-sink-scanner](https://0xelitesystem.github.io/llm-output-sink-scanner/)
-- What your splitter does to the text once it is extracted: [rag-chunk-visualizer](https://0xelitesystem.github.io/rag-chunk-visualizer/)
+- What your splitter does to the text once it is extracted: [chunking-strategy-compare](https://0xelitesystem.github.io/chunking-strategy-compare/)
 - Mitigations: [prompt-injection-defense-reference](https://github.com/0xelitesystem/prompt-injection-defense-reference)
 - All tools: https://0xelitesystem.github.io/
 - https://elitesystem.ai
